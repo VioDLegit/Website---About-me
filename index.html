@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Viod</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html" class="home-link">Home</a>
+        <a href="https://discord.gg/yourserverbozo" class="discord-link" target="_blank">Discord Server</a>
+      </nav>
+    </header>
+
+    <section class="about-me">
+      <div class="profile-container">
+        <img src="profile.png" alt="Profile Image" class="profile-img" />
+        <div class="profile-info">
+          <h1>Your Name Here!</h1>
+          <p class="status">Description here</p>
+        </div>
+      </div>
+
+      <div class="animated-description">
+        <p>
+          Add your description here 
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Viod.wtf</p>
+    </footer>
+  </div>
+
+  <script>
+    const description = document.querySelector('.animated-description p');
+    const textArray = description.textContent.split('');
+    description.textContent = '';
+    
+    textArray.forEach((letter, index) => {
+      setTimeout(() => {
+        description.textContent += letter;
+      }, 100 * index);
+    });
+  </script>
+</body>
+</html>
