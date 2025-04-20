@@ -8,3 +8,4 @@ You can add your own discord avatar as a png ✅
  **First** You will need a **PNG** format file of your avatar.
  **THEN** You drag it into the folder with index.html 
  **Finally** You rename it to profile.png if it isnt called that already!
+![image](https://github.com/user-attachments/assets/77965599-2cc5-4717-9248-01f59588f022)
